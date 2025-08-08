@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <title>RemoteHelpers — шаблони повідомлень</title>
-  <style>
+<meta charset="utf-8"/>
+<title>RemoteHelpers — шаблони повідомлень</title>
+<style>
     body {
       font-family: sans-serif;
       margin: 0;
@@ -61,11 +62,9 @@
   </style>
 </head>
 <body>
-
 <h2>RemoteHelpers — шаблони повідомлень</h2>
 <div class="tabs" id="tabs"></div>
 <div id="contents"></div>
-
 <script>
 const messages = [
   {
@@ -74,155 +73,222 @@ const messages = [
     en: `Hi! Could you let us know where you heard about us and which role you’re applying for? We’ll be waiting for your CV.`
   },
   {
-    title: 'Перший контакт (від нас)',
-    ua: `Привіт! Переглянула ваше резюме й вважаю, що ви чудово підходите на позицію {{Position}}. Розповісти детальніше?`,
-    en: `Hi! I’ve reviewed your profile and believe you’d be a great fit for our {{Position}} role. Would you like to hear more details?`
-  },
-  {
     title: 'Про компанію',
-    ua: `Чудово! Трохи про нас:
-Remote Helpers — аутстафф-компанія, що надає робочі місця в Україні для проєктів у ЄС та США.
+    ua: `Доброго дня! 
+Дякуємо за ваш інтерес до Remote Employees 💻
+Remote Employees — це аутстафф-компанія, що надає робочі місця в Україні для проєктів у ЄС та США.
+🌍 Наш сайт: https://rem-s.com/ua
 
-🌐 Наш сайт: https://rem-s.com/ua | 🌍 Для клієнтів: https://rh-s.com/
+🕘 Графік роботи:
+Після проходження онбордингу ви зможете обрати зручну зміну:
+▪️ 09:00–18:00 (1 год перерви)
+▪️ 15:00–24:00
+Робочі дні — пн-пт, вихідні — субота, неділя та офіційні свята.
 
-Графік:
-пн-пт 09:00–18:00 (1 год перерви) або 15:00–24:00. Можлива часткова зайнятість (part-time).
-
-З/п:
-Передбачено перегляд з/п та карʼєрне зростання.
-Виплати — 2 рази на місяць.
-Вихідні — субота, неділя та святкові дні.
+💸 Заробітна плата:
+▪️ Виплати — 2 рази на місяць
+▪️ Передбачено перегляд з/п та карʼєрне зростання
 
 Етапи відбору:
-1. Онлайн-тест з англійської (10–15 хв).
-2. Запис короткої відеовізитки (2–3 хв).
-3. Співбесіда з керівником відділу.
+1️⃣ Онлайн-тест з англійської (10–15 хв)
+2️⃣ Коротка відеовізитка (2–3 хв)
+3️⃣ Співбесіда з керівником відділу
+Якщо вам підходять умови — я надішлю посилання на тест, і ми зможемо розпочати 😉
+📩 Якщо виникнуть запитання — пишіть, із задоволенням відповім 🙌`,
+    en: `Hello! 
+Thank you for your interest in Remote Employees 💻
+Remote Employees is an outstaffing company that provides job opportunities in Ukraine for projects in the EU and the US.
+🌍 Our website: https://rem-s.com/ua
 
-Якщо все підходить — узгоджуємо дату старту і підписуємо договір 😊
+🕘 Work schedule:
+After onboarding, you’ll be able to choose a convenient shift:
+▪️ 09:00–18:00 (1-hour break)
+▪️ 15:00–24:00
+Working days — Mon-Fri, days off — Saturday, Sunday, and official holidays.
 
-Наче все розповіла! Якщо є запитання — обов’язково пишіть 🙌
-Чи підходять вам умови та етапи? Якщо так, то я надішлю посилання на тест, і ми зможемо розпочати 😉`,
-    en: `Great! 😊
-Here’s a bit about us and the position:
+💸 Salary:
+▪️ Paid twice a month
+▪️ Salary review and career growth available
 
-Remote Helpers is an outstaffing company that provides job opportunities in Ukraine for projects in the EU and the US.
-🌐 Our website: https://rem-s.com/ua | 🌍 Client: https://rh-s.com/
-
-📅 Schedule: Mon–Fri, 09:00–18:00 (or 15:00–24:00), part-time possible.
-💰 Salary: Growth possible, paid twice a month.
-🚫 Days off: Sat–Sun & public holidays.
-
-Steps:
-1. Online English test (10–15 min)
-2. Short video (2–3 min)
-3. Interview with the team lead
-
-Let me know if these conditions work and I’ll send you the test link 😉`
+Selection steps:
+1️⃣ Online English test (10–15 min)
+2️⃣ Short video introduction (2–3 min)
+3️⃣ Interview with the department lead
+If the conditions suit you — I’ll send you the test link so we can begin 😉
+📩 If you have any questions — feel free to write, I’ll gladly respond 🙌`
   },
   {
     title: 'Надсилання тесту',
-    ua: `Прекрасно! Надсилаю посилання на короткий онлайн-тест з англійської:
+    ua: `Супер! Надсилаю посилання на короткий онлайн-тест з англійської:
 🔗 https://forms.gle/knuqogPtoZaEHfQ69
-
 Займе близько 10–15 хв. Можна проходити з будь-якого пристрою.
 Після проходження, будь ласка, напишіть мені тут 😊`,
     en: `Great! Here’s the link to a short online English test:
 🔗 https://forms.gle/knuqogPtoZaEHfQ69
-
 It takes about 10–15 minutes. You can complete it on any device.
 Once done, please message me here 😊`
   },
   {
     title: 'Після тесту — відео',
-    ua: `Дякую, побачила ваш тест 😊 Ви показали чудовий результат!
+    ua: `Дякую, побачила ваш тест 😊 Ви показали чудовий результат —  /60!
 Тож можемо переходити до наступного етапу — відеовізитки.
 
 🎥 Будь ласка, запишіть відео (2–3 хв, горизонтально), де розкажете:
 • Хто ви, ваш досвід і освіта
 • Ваші навички
 • Чому вам цікава ця позиція
-
 Якщо не складно, також напишіть текстом, що сказали, і надішліть разом із відео.
 
 Інструкції: https://rem-s.com/ua/videointerview`,
-    en: `Thanks, I saw your test 😊 You did a great job!
+    en: `Thanks, I saw your test 😊 You did a great job —  /60!
 Let’s move on to the next stage — the video introduction.
 
 🎥 Please record a 2–3 minute video (horizontal) telling:
 • Who you are, your background and education
 • Your key skills
 • Why you're interested in the role
-
 Also, send a short written version if possible.
 
 Instructions: https://rem-s.com/videointerview`
   },
   {
     title: 'Після відео — уточнення',
-    ua: `Привіт! Дякую за відео, вже передала його керівнику 😊
-Хотіла уточнити два моменти:
-1. Які у вас очікування щодо зарплати?
-2. Який графік для вас найзручніший (повний/неповний день, ранок/вечір)?`,
-    en: `Hi! Thank you for the video — I’ve already forwarded it to the manager 🤝
-Just wanted to clarify two things:
-1. What are your salary expectations?
-2. What work schedule would be most convenient (full/part-time, morning/evening)?`
+    ua: `Привіт! Дякую за відео! 🙌
+Скажіть, будь ласка, які у вас зарплатні очікування на старті?`,
+    en: `Hi! Please tell me what your starting salary expectations are?`,
   },
   {
-    title: 'Запрошення на інтерв\'ю',
-    ua: `Привіт!
-Ваше відео вже переглянули, і ми хотіли б запросити вас на співбесіду з керівником відділу 😊
+  "title": "Запрошення на групову онлайн-співбесіду",
+  "ua": "Запрошуємо вас на групову онлайн-співбесіду, яка відбудеться:\n🗓 01/08/2025, о 16:30\n🔗 Посилання на зустріч: http://meet.google.com/fqf-vxgn-qqs \n\nЩоб наша розмова пройшла максимально продуктивно, будь ласка, ознайомтесь із важливою інформацією нижче:\n\n💻 Технічна підготовка\nПриєднуйтесь з комп’ютера або ноутбука.\nПеревірте, чи працює камера та мікрофон. Ми просимо вмикати камеру — це допомагає краще познайомитися 😊\nПодбайте про стабільний інтернет і тихе місце без відволікаючих факторів.\n\n👥 Формат співбесіди\nЦе групова зустріч з іншими кандидатами.\nМи цінуємо взаємодію, тому будемо раді вашій активності, запитанням, коментарям і проявам командної динаміки.\n\n✨ Поради для підготовки\nПодивіться наше коротке відео про компанію, щоб краще нас зрозуміти:\n▶️ https://video.pictory.ai/v2/preview/1176873989179720605901750929365578\nЯкщо ваша роль передбачає портфоліо, підготуйте можливість поділитися екраном і показати свої роботи.\nПідготуйте свої запитання до нас — нам важлива ваша зацікавленість.\n\n✅ Будь ласка, підтвердіть свою участь у співбесіді у відповідь на це повідомлення.\nЧекаємо на вашу відповідь і будемо раді зустрічі!",
+  "en": "We invite you to a group online interview that will take place on:\n🗓 01/08/2025, at 16:30 Kyiv time\n🔗 Meeting link: http://meet.google.com/fqf-vxgn-qqs \n\nTo make our conversation as productive as possible, please read the important info below:\n\n💻 Technical preparation\nJoin from a computer or laptop.\nMake sure your camera and microphone work. We ask you to keep your camera on — it helps us get to know each other better 😊\nEnsure stable internet and a quiet environment.\n\n👥 Interview format\nIt’s a group call with other candidates.\nWe value interaction, so feel free to ask questions, comment, and show team spirit.\n\n✨ Preparation tips\nWatch our short video about the company to understand us better:\n▶️ https://video.pictory.ai/v2/preview/1176873989179720605901750929365578\nIf your role requires a portfolio, be ready to share your screen and present your work.\nHave your questions for us ready — your interest matters to us.\n\n✅ Please confirm your participation by replying to this message.\nLooking forward to meeting you!"
+},
 
-Коли: {дата}, о {час} за київським часом
-
-Під час розмови керівник детальніше розповість про проєкт і обов’язки, а ви зможете поставити свої запитання й розповісти про себе.
-Чи підходить вам такий час?`,
-    en: `Hello!
-Your video has been reviewed and we’d love to invite you to an interview with the department head 😊
-
-When: {date}, at {time} Kyiv time
-
-They’ll explain more about the role and you’ll be able to ask questions and share more about yourself.
-Does this time work for you?`
+{
+    title: 'В день співбесіди',
+    ua: `Вітаю! Чи очікувати Вас сьогодні на співбесіді?<br><br>Ваша співбесіда вже розпочалася, приєднуйтесь, будь ласка.`,
+    en: `Hello! Will you be joining us for the interview today?<br><br>Your interview has already started, please join now.`
   },
+  {
+  "title": "Оффер з фіксованою зп",
+  "ua": "Вітаю! Маємо чудові новини! 🥳\nПісля фінальної співбесіди ми були дуже вражені вами та з радістю хочемо зробити вам офіційну пропозицію приєднатися до команди RemotEmployees!\n🔹 Стартова заробітна плата: 12000UAH / місяць\n🔹 Дата початку роботи: понеділок, 28 Липня 2025 року\n🔹 Напрям: лідогенерація\n\nОсновні завдання на цій позиції:\nШукати контакти потенційних клієнтів у Google та соцмережах\nЗаповнювати таблиці за прикладом\nВідправляти листи за шаблоном\nВиконувати прості щоденні завдання\n\nСкажіть, будь ласка, чи приймаєте ви нашу пропозицію та чи готові приєднатися до нас у зазначену дату?\nЯкщо так — ми надішлемо вам договір для ознайомлення. 😊",
+  "en": "Congratulations! We have great news! 🥳\nAfter the final interview, we were very impressed and would love to officially offer you a position on the RemotEmployees team!\n🔹 Starting salary: 12000UAH / month\n🔹 Start date: Monday, July 28, 2025\n🔹 Direction: Lead Generation\n\nMain tasks for this role:\nSearch for potential client contacts via Google and social media\nFill in spreadsheets using our template\nSend emails based on our scripts\nComplete simple daily tasks\n\nPlease let us know if you accept our offer and are ready to join on the mentioned date.\nIf yes, we’ll send you a contract to review. 😊"
+},
+
+{
+    title: 'Підпис контракту',
+    ua: `Супер! Тепер мені потрібно підписати з вами угоду про співпрацю.<br>
+Для договору мені потрібні ваше повне ім’я англійською (ім’я, прізвище та по батькові) так, як у вашому міжнародному паспорті👌<br>
+Також, будь ласка, надайте вашу поточну електронну адресу, щоб я могла надіслати вам договір (підписана копія буде автоматично надіслана вам після підписання).`,
+    en: `Great! Now I need to sign a cooperation agreement with you.<br>
+For the contract, I’ll need your full name in English (first name, last name, and patronymic) exactly as in your international passport 👌<br>
+Also, please provide your current email address so I can send you the agreement (a signed copy will be automatically sent to you after signing).`
+  },
+
+{
+    title: 'Відправила договір',
+    ua: `Я надіслала контракт на вашу електронну пошту :)<br>
+Перед початком роботи, вам потрібно підписати його. Після цього я надішлю вам перші облікові дані та інструкції для вашого першого дня.<br><br>
+У полі "номер банківського рахунку" нам потрібен тільки номер вашої звичайної картки, а не IBAN. У полі "відкрито в" вкажіть назву банку.<br><br>
+Також, будь ласка, надішліть мені фотографії (обидві сторони) одного з документів, що підтверджують вашу особу:<br>
+ID картка<br>
+міжнародний паспорт<br>
+водійське посвідчення<br>
+або звичайний паспорт (сторінки 1, 2 та 11), якщо попередні документи відсутні.<br><br>
+Фотографії повинні бути високої якості та не обрізані.<br>
+Якщо у вас є питання, не соромтеся писати — я з радістю допоможу :)`,
+    en: `I’ve sent the contract to your email :)<br>
+You’ll need to sign it before starting work. After that, I’ll send you your first login credentials and instructions for your first day.<br><br>
+In the “bank account number” field, please enter your regular card number (not IBAN). In the “opened at” field, specify your bank name.<br><br>
+Also, please send me clear photos (both sides) of one of the following documents to verify your identity:<br>
+ID card<br>
+International passport<br>
+Driver’s license<br>
+Or regular passport (pages 1, 2, and 11), if none of the above are available.<br><br>
+Photos should be high-quality and not cropped.<br>
+If you have any questions, feel free to write — I’ll be happy to help :)`
+  },
+
+  {
+    title: 'Все готово до виходу',
+    ua: `Дякую! Отримала)<br>
+У перший робочий день я надам тобі доступ до нашої CRM-системи. 
+Оскільки ми активно використовуємо штучний інтелект у щоденній роботі, дуже рекомендую переглянути до понеділка кілька навчальних відео про те, як ефективно використовувати різні AI-інструменти.<br>
+Також, будь ласка, встанови Discord на комп’ютер – ми використовуємо його для командної комунікації 😉<br><br>
+👉 Твій перший робочий день починається о 09:00, тому підготуйся заздалегідь.<br><br>
+Перед стартом також потрібно створити:<br>
+— Робочу пошту (будь ласка, не використовуй особисті паролі, адже ми матимемо доступ),<br>
+— LinkedIn профіль (використовуй нову пошту для реєстрації).<br>
+📌 Якщо при реєстрації попросять ввести номер телефону – введи будь-який, а потім просто відкріпи його в налаштуваннях.<br><br>
+До зустрічі на онбордингу! 🤗 Ми проведемо разом кілька перших днів, знайомлячись, навчаючись і розбираючись в усьому разом 💪`,
+    en: `Thank you! Got it)<br>
+On your first day, I’ll give you access to our CRM system.
+Since we actively use AI in our daily work, I highly recommend watching a few training videos before Monday on how to use various AI tools effectively.<br>
+Also, please install Discord on your computer — we use it for team communication 😉<br><br>
+👉 Your first workday starts at 09:00, so please be prepared in advance.<br><br>
+Before starting, please also create:<br>
+— A work email (don’t use personal passwords, since we’ll have access),<br>
+— A LinkedIn profile (use the new email for registration).<br>
+📌 If asked for a phone number during registration — enter any number, then just unlink it in the settings.<br><br>
+See you at onboarding! 🤗 We’ll spend the first few days getting acquainted, learning, and figuring everything out together 💪`
+  },
+
+{
+    title: 'Інструкція щодо першого дня',
+    ua: `Доброго ранку! 😊<br>
+Вітаю з першим робочим днем! Починаємо 🚀<br><br>
+🧩 1. Підключення до Discord<br>
+Приєднуйся до Discord-сервера за цим лінком:<br>
+🔗 https://discord.gg/WNzzyX5d<br>
+Одразу після підключення ти потрапиш у чат 🌠welcome-portal.<br>
+Зайди у свій профіль і підпиши себе англійською (ім’я та прізвище), щоб ми могли тебе знайти.<br>
+Після цього ми надамо тобі потрібну роль та додамо у робочі канали твого відділу (HR, marketing, PM тощо).<br><br>
+📝 Тут детальні інструкції по перших кроках:<br>
+https://docs.google.com/document/d/1HFWukn-C1okUXR3pRiY7W3wml6RLGnAiehY3RieBQNA/edit?usp=sharing<br><br>
+👩‍🏫 2. Тренінг<br>
+О 09:30 приєднуйся до training room. Посилання — також у файлі з інструкцією вище.<br><br>
+🔐 3. Доступ до CRM<br>
+Надаю твій доступ:<br>
+Логін: zasiadkomatvii04@gmail.com<br>
+Пароль: eacg80BD<br><br>
+Якщо виникнуть запитання — завжди поруч! ✨`,
+    en: `Good morning! 😊<br>
+Welcome to your first workday! Let’s begin 🚀<br><br>
+🧩 1. Join Discord<br>
+Join the Discord server using this link:<br>
+🔗 https://discord.gg/WNzzyX5d<br>
+You’ll land in the 🌠welcome-portal chat.<br>
+Go to your profile and set your name in English (first and last name) so we can identify you.<br>
+We’ll then assign your role and add you to your department’s working channels (HR, marketing, PM, etc.).<br><br>
+📝 Here are detailed instructions for the first steps:<br>
+https://docs.google.com/document/d/1HFWukn-C1okUXR3pRiY7W3wml6RLGnAiehY3RieBQNA/edit?usp=sharing<br><br>
+👩‍🏫 2. Training<br>
+At 09:30, join the training room — the link is also in the instruction file above.<br><br>
+🔐 3. CRM Access<br>
+Here’s your login info:<br>
+Login: zasiadkomatvii04@gmail.com<br>
+Password: eacg80BD<br><br>
+If you have questions — I’m always here to help! ✨`
+  },
+
+
   {
     title: 'Відмова',
     ua: `Привіт!
 Дякуємо за ваш час і за те, що пройшли всі етапи.
-
 Наразі ми не можемо запропонувати вам позицію, оскільки шукаємо кандидата з трохи іншим профілем.
-
 Ми збережемо ваше резюме в базі — якщо з’явиться релевантна вакансія, я обов’язково зв’яжуся 💙
-
 Успіхів у пошуку роботи!`,
     en: `Hi!
 Thank you for your time and for going through the steps.
-
 Unfortunately, we won’t be moving forward as we’re looking for a slightly different profile.
-
 We’ll keep your CV in our database and reach out if something relevant appears 💙
-
 Wishing you the best in your job search!`
   },
   {
-    title: 'Лінк на Google Meet',
-    ua: `Привіт! 👋
-Надсилаю посилання на зустріч з керівником:
-🔗 {meet_link}
-
-Дата: {дата}
-Час: {час} за київським часом
-
-Якщо щось зміниться — напишіть мені.`,
-    en: `Hi! 👋
-Here’s the link to the meeting with the department head:
-🔗 {meet_link}
-
-Date: {date}
-Time: {time} Kyiv time
-
-Let me know if anything changes.`
-  }
+  "title": "Відмова (вакансія закрита)",
+  "ua": "Привіт!\nДякуємо за відгук, але ця вакансія наразі **тимчасово закрита**. Зараз ми не можемо запропонувати позицію, але збережемо Ваші контакти в базі.\nБажаємо успіхів! ✨",
+  "en": "Hello!\nThank you for your response, but this vacancy is **temporarily closed**. At the moment, we can’t offer you a position, but we will keep your contact information on file.\nWishing you success! ✨"
+}
 ];
 
 const tabs = document.getElementById("tabs");
@@ -262,6 +328,5 @@ function setTab(index) {
   });
 }
 </script>
-
 </body>
 </html>
